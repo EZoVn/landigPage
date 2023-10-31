@@ -33,16 +33,10 @@ $GrayishBlue: hsl(208, 11%, 55%);
 }
 
 // Problème avec le background image a régler !!
-body {
-  position: relative;
-  padding: 25px 50px;
-  // background-image: url("../../../../img/la-chouette-agence-banniere.jpg");
-  // background-size: cover;
-  // background-position: center center;
-  // background-repeat: no-repeat;
-}
+
 .header {
   // height: 100vh;
+    padding: 25px 50px;
   background-image: url("../../../news-homepage-main/assets/images/image-gaming-growth.jpg");
   // background-color: red;
   // background-image: url("C:/Users/VnZnX/Desktop/Info/challenge frontend mentor/challenge html_css_js/huddle_landing_page/images/backgroung_image.jpg");
@@ -101,7 +95,9 @@ main img,
   align-items: center;
   box-shadow: 0px 1px 5px $GrayishBlue;
   padding: 20px;
-  margin: 20px;
+  margin: 45px 70px;
+  // margin: 20px;
+  
   &__left {
     padding: 10%;
     display: flex;
@@ -133,6 +129,10 @@ button {
   }
 }
 .beforeFooter {
+  position: absolute;
+  bottom: 175px;
+  right: 10%;
+  
   background-color: white;
   margin: 50px 25%;
   padding: 50px;
@@ -142,13 +142,14 @@ button {
   text-align: center;
 }
 .footer {
-  position: absolute;
-  bottom: -200px;
-  z-index: -1;
-  // padding-top: 150px;
-  left: 0;
-  right: 0;
+  position: relative;
+  // bottom: -200px;
+  // z-index: -1;
+  padding-top: 100px;
+  // left: 0;
+  // right: 0;
   background-color: $VeryDarkCyan;
+  margin: 0;
   &__contact {
     display: flex;
     // color: #0000;

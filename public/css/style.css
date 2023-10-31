@@ -29,12 +29,8 @@ p {
   background-color: hsl(193, 100%, 96%);
 }
 
-body {
-  position: relative;
-  padding: 25px 50px;
-}
-
 .header {
+  padding: 25px 50px;
   background-image: url("../../../news-homepage-main/assets/images/image-gaming-growth.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +104,7 @@ main img,
   -webkit-box-shadow: 0px 1px 5px hsl(208, 11%, 55%);
           box-shadow: 0px 1px 5px hsl(208, 11%, 55%);
   padding: 20px;
-  margin: 20px;
+  margin: 45px 70px;
 }
 .card__left {
   padding: 10%;
@@ -151,6 +147,9 @@ button:hover {
 }
 
 .beforeFooter {
+  position: absolute;
+  bottom: 175px;
+  right: 10%;
   background-color: white;
   margin: 50px 25%;
   padding: 50px;
@@ -162,12 +161,10 @@ button:hover {
 }
 
 .footer {
-  position: absolute;
-  bottom: -200px;
-  z-index: -1;
-  left: 0;
-  right: 0;
+  position: relative;
+  padding-top: 100px;
   background-color: hsl(192, 100%, 9%);
+  margin: 0;
 }
 .footer__contact {
   display: -webkit-box;
