@@ -22,18 +22,13 @@ p {
   z-index: -1;
   margin: 0;
   padding: 0px;
-  height: 100vh;
   top: 0;
   left: 0;
-  bottom: 25%;
   background-color: hsl(193, 100%, 96%);
 }
 
 .header {
   padding: 25px 50px;
-  background-image: url("../../../news-homepage-main/assets/images/image-gaming-growth.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +59,7 @@ p {
       -ms-flex-align: start;
           align-items: start;
   text-align: start;
+  max-width: 45%;
   padding: 50px 20px 50px 0px;
 }
 .mainLeft__title {
@@ -148,10 +144,12 @@ button:hover {
 
 .beforeFooter {
   position: absolute;
-  bottom: 175px;
-  right: 10%;
+  top: -25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   background-color: white;
-  margin: 50px 25%;
+  margin: 0 auto;
   padding: 50px;
   border: 1px solid hsl(208, 11%, 55%);
   border-radius: 15px;
@@ -161,17 +159,60 @@ button:hover {
 }
 
 .footer {
+  color: hsl(193, 100%, 96%);
   position: relative;
   padding-top: 100px;
   background-color: hsl(192, 100%, 9%);
-  margin: 0;
+  margin-top: 125px;
 }
 .footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer li {
+  padding-bottom: 20px;
+}
+
+.footerLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 40%;
+}
+.footerLeft li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px;
+}
+.footerLeft li img {
+  padding-right: 15px;
 }
 
 ul li {
   list-style: none;
+}
+
+.footer__contact--reseau i {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid hsl(193, 100%, 96%);
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer__contact--reseau i:hover {
+  cursor: pointer;
+  color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
 }
