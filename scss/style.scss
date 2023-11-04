@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
+@import "variables";
+@import "button";
+@import "mixins";
+@import "header";
+@import "card";
+@import "footer";
+
 * {
   margin: 0;
 }
@@ -6,155 +14,17 @@ h1,
 h2 {
   font-family: "poppins", sans-serif;
   font-weight: 600;
+  color: $VeryDarkCyan;
 }
 body,
 p {
-  // Font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  // font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
-$primary: hsl(322, 100%, 66%);
-$VeryPaleCyan: hsl(193, 100%, 96%);
-$VeryDarkCyan: hsl(192, 100%, 9%);
-$GrayishBlue: hsl(208, 11%, 55%);
 
-.background__img {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  margin: 0;
-  padding: 0px;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  bottom: 25%;
-  background-color: $VeryPaleCyan;
-}
-
-// Problème avec le background image a régler !!
-body {
-  position: relative;
-  padding: 25px 50px;
-  // background-image: url("../../../../img/la-chouette-agence-banniere.jpg");
-  // background-size: cover;
-  // background-position: center center;
-  // background-repeat: no-repeat;
-}
-.header {
-  // height: 100vh;
-  background-image: url("../../../news-homepage-main/assets/images/image-gaming-growth.jpg");
-  // background-color: red;
-  // background-image: url("C:/Users/VnZnX/Desktop/Info/challenge frontend mentor/challenge html_css_js/huddle_landing_page/images/backgroung_image.jpg");
-  // background-image: url("C:\Users\VnZnX\Desktop\Info\challenge frontend mentor\challenge html_css_js\huddle_landing_page\images\backgroung_image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  // align-items: center;
-  // text-align: center;
-  &__nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0px 30px 0px;
-  }
-}
-
-.mainLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-align: start;
-  padding: 50px 20px 50px 0px;
-  &__title {
-    padding: 0px 20px 10px 0px;
-  }
-  &__text {
-    padding: 10px 0px;
-  }
-  &__button {
-    justify-content: center;
-  }
-}
-
-.header__main {
-  display: flex;
-  justify-content: space-between;
-  // & img {
-  // width: 100%; /* La largeur de l'image est définie à 100% de la largeur de son conteneur */
-  // height: auto; /* La hauteur est automatiquement ajustée pour conserver l'aspect ratio */
-  // max-width: 100%; /* La largeur maximale est également définie à 100% pour éviter le dépassement */
-  //   // max-width: 750px;
-  //   // object-fit: cover;
-  // }
-}
-main img,
-.card img {
-  width: 100%; /* La largeur de l'image est définie à 100% de la largeur de son conteneur */
-  height: auto; /* La hauteur est automatiquement ajustée pour conserver l'aspect ratio */
-  max-width: 100%; /* La largeur maximale est également définie à 100% pour éviter le dépassement */
-  // max-width: 750px;
-  // object-fit: cover;
-}
-.card {
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 1px 5px $GrayishBlue;
-  padding: 20px;
-  margin: 20px;
-  &__left {
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.btnHeader {
-  color: $VeryDarkCyan;
-  background-color: white;
-  &:hover {
-    color: $GrayishBlue;
-    opacity: 0.5;
-  }
-}
-button {
-  font-size: 10px;
-  border: none;
-  padding: 15px 40px;
-  box-shadow: 0px 1px 5px $GrayishBlue;
-  color: white;
-  background-color: $primary;
-  border-radius: 20px;
-  transition: opacity 0.3s ease;
-  &:hover {
-    opacity: 0.5;
-    cursor: pointer;
-  }
-}
-.beforeFooter {
-  background-color: white;
-  margin: 50px 25%;
-  padding: 50px;
-  border: 1px solid $GrayishBlue;
-  border-radius: 15px;
-  box-shadow: 0px 1px 5px $GrayishBlue;
-  text-align: center;
-}
-.footer {
-  position: absolute;
-  bottom: -200px;
-  z-index: -1;
-  // padding-top: 150px;
-  left: 0;
-  right: 0;
-  background-color: $VeryDarkCyan;
-  &__contact {
-    display: flex;
-    // color: #0000;
-  }
-}
-
-ul li {
-  list-style: none;
-}
+// @media (max-width: 768px) {
+//   *{
+//     margin: 0;
+//     padding: 0;
+//   }
+// }

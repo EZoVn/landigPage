@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <script src="https://kit.fontawesome.com/205d2d4b64.js" crossorigin="anonymous"></script>
     <link
       rel="icon"
       type="image/png"
@@ -18,12 +18,12 @@
   </head>
 
   <body>
-    <!-- <img
-      class="background__img"
-      src="./images/bg-hero-desktop.svg"
-      alt="background image"
-      /> -->
     <header class="header">
+      <img
+        class="background__img"
+        src="./images/bg-hero-desktop.svg"
+        alt="background image"
+        />
       <div class="header__nav">
         <img src="./images/logo.svg" alt="Logo du site" />
         <button class="btnHeader">Try It Free</button>
@@ -51,8 +51,8 @@
 
     <div class="card">
       <div class="card__left">
-        <h2 class="card__title">Grow Together</h2>
-        <p class="card__text">
+        <h2 class="card__left--title">Grow Together</h2>
+        <p class="card__left--text">
           Generate meaningful discussions with your audience and build a strong,
           loyal community. Think of the insightful conversations you miss out on
           with a feedback form.
@@ -66,7 +66,7 @@
         />
       </div>
     </div>
-    <div class="card">
+    <div class="card card__invert">
       <div class="card__right">
         <img
           src="./images/illustration-flowing-conversation.svg"
@@ -99,13 +99,13 @@
       </div>
     </div>
 
-    <div class="beforeFooter">
-      <p class="beforeFooter__text">Ready To Build Your Community?</p>
-      <button class="beforeFooter__button">Get Started For Free</button>
-    </div>
     <footer class="footer">
-      <div>
-        <img class="footer__logo" src="./images/logoFooter.svg" alt="logo du site" />
+      <div class="beforeFooter">
+        <h2 class="beforeFooter__text">Ready To Build Your Community?</h2>
+        <button class="beforeFooter__button">Get Started For Free</button>
+      </div>
+      <div class="footer__logo">
+        <img class="footer__logo--img" src="./images/logoFooter.svg" alt="logo du site" />
       </div>
       <div class="footer__contact">
         <div class="footerLeft">
@@ -134,7 +134,7 @@
             <li>FAQ</li>
           </ul>
         </div>
-        <div>
+        <div class="footerRight">
           <ul>
             <li>Career</li>
             <li>Blog</li>
@@ -142,7 +142,11 @@
           </ul>
         </div>
         <!-- logo reseaux sociaux -->
-        <div class="logo__reseau"></div>
+        <div class="footer__contact--reseau">
+          <i class="icon fa-brands fa-facebook-f"></i>
+          <i class="icon fa-brands fa-instagram"></i>
+          <i class="icon fa-brands fa-twitter"></i>
+        </div>
       </div>
     </footer>
   </body>
