@@ -1,0 +1,22 @@
+.btnHeader {
+  color: $VeryDarkCyan;
+  background-color: white;
+  &:hover {
+    color: $GrayishBlue;
+    opacity: 0.5;
+  }
+}
+button {
+  font-size: 10px;
+  border: none;
+  padding: 15px 60px;
+  box-shadow: 0px 1px 5px $GrayishBlue;
+  color: white;
+  background-color: $primary;
+  border-radius: 20px;
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
